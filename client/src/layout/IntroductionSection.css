@@ -1,0 +1,26 @@
+.introduction-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    /*height: auto;*/
+    height: 100vh;
+    background-image: url("../img/mainImg.jpeg");
+}
+
+.introduction-header{
+    font-family: 'Ubuntu',Arial,sans-serif;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    width: 50%;
+    line-height: 1.35em;
+}
+
+.introduction-header span{
+    background-color: #114d4d;
+}

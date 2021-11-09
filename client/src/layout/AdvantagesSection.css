@@ -1,0 +1,75 @@
+.advantages-section {
+    padding: 8em 5em 3em 5em;
+    background: linear-gradient(to bottom, #bec3ad, #efda7f, #bec3ad);
+    z-index: 100;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.cards-header {
+    position: relative;
+    display: flex;
+    z-index: 100;
+    width: 80%;
+}
+
+.advantages-header-bg {
+    background: linear-gradient(to right, #0a3131, #354e4f, #0a3131);
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    top: -1em;
+    left: -2em;
+    z-index: -100;
+    float: left;
+}
+
+
+.cards-header h2 {
+    font-size: 2em;
+    text-orientation: mixed;
+    letter-spacing: .05rem;
+    color: #edb941;
+    z-index: 200;
+}
+
+.cards-wrapper {
+    z-index: 300;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cards-wrapper .card-wrapper {
+    width: 30%;
+    flex-grow: 1;
+    height: 20em;
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-header {
+
+}
+
+.card-header p {
+    font-size: 1.4em;
+}
+
+.card-text {
+
+}
+
+.card-text {
+
+}

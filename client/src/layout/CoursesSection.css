@@ -1,0 +1,66 @@
+.courses-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    /*height: auto;*/
+    height: 100vh;
+    background-image: url("../img/toyBg.jpeg");
+}
+
+.courses-card {
+    background: #e5dec1cc;
+    border-radius: .5em;
+    box-shadow: 0 0 10px 0 #565656;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin: 2em;
+    padding: 1em;
+}
+
+.introduction-header span{
+    background-color: #114d4d;
+}
+
+.about-header{
+
+}
+
+.about-header-text{
+    font-family: 'Ubuntu',Arial,sans-serif;
+    font-size: 1.5em;
+    color: #565656;
+}
+.about-us{
+    text-decoration: none;
+
+}
+.about-us-point{
+    list-style: none;
+    text-decoration: none;
+    padding: .3em;
+    display: flex;
+    align-items: center;
+    margin: .5em;
+    box-sizing: border-box;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: #edb941;
+    border: 1px solid #755612;
+    border-radius: 50%;
+    margin: .3em;
+    color: white;
+    box-shadow: 0 0 10px 0 #e2b249;
+
+}
+.check-text{
+    max-width: 90%;
+    font-size: 1.1em;
+}

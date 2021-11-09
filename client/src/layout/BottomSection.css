@@ -1,0 +1,14 @@
+.bottom-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section {
+    flex: 2;
+}
+
+.footer {
+    flex: 1;
+    background: linear-gradient(to right, #0a3131, #354e4f, #0a3131);
+}
