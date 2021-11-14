@@ -1,9 +1,9 @@
 .prices-section {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/toyBg.jpeg");
+    background-image: url("../img/boyBg.jpeg");
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     height: 100vh;
 }
 

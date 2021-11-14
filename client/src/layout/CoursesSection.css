@@ -2,7 +2,6 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
     position: relative;
     /*height: auto;*/
     height: 100vh;
@@ -15,9 +14,9 @@
     box-shadow: 0 0 10px 0 #565656;
     position: absolute;
     top: 35%;
-    left: 50%;
+    left: 65%;
     margin: 2em;
-    padding: 1em;
+    padding: 1em 2em;
 }
 
 .introduction-header span{
@@ -43,7 +42,7 @@
     padding: .3em;
     display: flex;
     align-items: center;
-    margin: .5em;
+    margin: 0 .5em;
     box-sizing: border-box;
 }
 .check{

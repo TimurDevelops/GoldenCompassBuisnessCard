@@ -1,5 +1,5 @@
 .advantages-section {
-    padding: 8em 5em 3em 5em;
+    padding: 6em 5em 3em 5em;
     background: linear-gradient(to bottom, #bec3ad, #efda7f, #bec3ad);
     z-index: 100;
     height: 100vh;
@@ -13,9 +13,10 @@
     width: 80%;
 }
 
+
+
 .advantages-header-bg {
     background: linear-gradient(to right, #0a3131, #354e4f, #0a3131);
-
     position: absolute;
     width: 100%;
     height: 100%;
@@ -40,17 +41,23 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: center;
 }
 
 .cards-wrapper .card-wrapper {
     width: 30%;
-    flex-grow: 1;
-    height: 20em;
+    /*flex-grow: 1;*/
+    height: 15em;
 }
 
 .card-img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+}
+.card-img.teacher {
+    padding: 5px;
+    width: 95px;
+    height: 95px;
 }
 
 .card-img img {
@@ -63,11 +70,13 @@
 }
 
 .card-header p {
+    padding: 0;
+    margin: 0;
     font-size: 1.4em;
 }
-
-.card-text {
-
+.card-text p{
+    padding: 0;
+    margin: 0;
 }
 
 .card-text {
