@@ -1,0 +1,26 @@
+.contact-btn-wrapper {
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.contact-btn {
+    cursor: pointer;
+    background-color: #779e83;
+    padding: .75em 1.25em;
+    margin: 1.5em 2em;
+    border-radius: 1.5em;
+    transition: all .5s ease;
+    box-shadow: 0 0 10px 0 #565656;
+}
+
+.contact-btn:hover {
+    background-color: #edb941;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    /*color: inherit;*/
+    color: #3a302d;
+}

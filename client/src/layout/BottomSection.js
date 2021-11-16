@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const BottomSection = () => {
   return (
-    <section className="bottom-section">
+    <section className="bottom-section" id="contact">
       <div className="contact-section">
         <div className="login-wrapper">
           <div className='background-holder'>

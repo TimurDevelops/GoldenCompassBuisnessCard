@@ -1,84 +1,66 @@
 .advantages-section {
-    padding: 6em 5em 3em 5em;
-    background: linear-gradient(to bottom, #bec3ad, #efda7f, #bec3ad);
-    z-index: 100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: bottom;*/
+    position: relative;
+    /*height: auto;*/
     height: 100vh;
+    background-image: url("../img/toyBg.jpeg");
+}
+
+.advantages-card {
+    background: #e5dec1cc;
+    border-radius: .5em;
+    box-shadow: 0 0 10px 0 #565656;
+    position: absolute;
+    top: 20%;
+    left: 46%;
+    margin: 2em;
+    padding: 1em 2em;
+}
+
+.introduction-header span{
+    background-color: #114d4d;
+}
+
+.about-header{
+
+}
+
+.about-header-text{
+    font-family: 'Ubuntu',Arial,sans-serif;
+    font-size: 1.5em;
+    color: #565656;
+}
+.about-us{
+    text-decoration: none;
+
+}
+.about-us-point{
+    list-style: none;
+    text-decoration: none;
+    padding: .3em;
+    display: flex;
+    align-items: center;
+    margin: 0 .5em;
     box-sizing: border-box;
 }
-
-.cards-header {
-    position: relative;
+.check{
     display: flex;
-    z-index: 100;
-    width: 80%;
-}
-
-
-
-.advantages-header-bg {
-    background: linear-gradient(to right, #0a3131, #354e4f, #0a3131);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-    top: -1em;
-    left: -2em;
-    z-index: -100;
-    float: left;
-}
-
-
-.cards-header h2 {
-    font-size: 2em;
-    text-orientation: mixed;
-    letter-spacing: .05rem;
-    color: #edb941;
-    z-index: 200;
-}
-
-.cards-wrapper {
-    z-index: 300;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
     justify-content: center;
-}
-
-.cards-wrapper .card-wrapper {
-    width: 30%;
-    /*flex-grow: 1;*/
-    height: 15em;
-}
-
-.card-img {
-    width: 100px;
-    height: 100px;
-}
-.card-img.teacher {
-    padding: 5px;
-    width: 95px;
-    height: 95px;
-}
-
-.card-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.card-header {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: #edb941;
+    border: 1px solid #755612;
+    border-radius: 50%;
+    margin: .3em;
+    color: white;
+    box-shadow: 0 0 10px 0 #e2b249;
 
 }
-
-.card-header p {
-    padding: 0;
-    margin: 0;
-    font-size: 1.4em;
-}
-.card-text p{
-    padding: 0;
-    margin: 0;
-}
-
-.card-text {
-
+.check-text{
+    max-width: 90%;
+    font-size: 1.1em;
 }

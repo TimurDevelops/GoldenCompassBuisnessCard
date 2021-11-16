@@ -2,7 +2,7 @@ import './IntroductionSection.css';
 
 const IntroductionSection = () => {
   return (
-    <section className="introduction-section">
+    <section className="introduction-section" id="main">
       <div className="introduction-header">
         <span>Онлайн школа детского развития</span>
       </div>
