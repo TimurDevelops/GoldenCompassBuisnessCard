@@ -1,0 +1,19 @@
+{
+  "name": "goldencompassbuisnesscard",
+  "version": "1.0.0",
+  "description": "Buisness card for golden compass app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimurDevelops/GoldenCompassBuisnessCard.git"
+  },
+  "author": "Timur Eremchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimurDevelops/GoldenCompassBuisnessCard/issues"
+  },
+  "homepage": "https://github.com/TimurDevelops/GoldenCompassBuisnessCard#readme"
+}
