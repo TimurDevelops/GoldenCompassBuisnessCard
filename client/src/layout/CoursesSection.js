@@ -12,35 +12,35 @@ const CoursesSection = () => {
         <ul className="about-us">
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">Подготовка к школе</span>
+            <span className="check-text">Занятия проводят опытные, дипломированные специалисты</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">Логопедия</span>
+            <span className="check-text">Для занятий не нужно никуда ехать, достаточно планшета или компьютера</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">Ментальная арифметика</span>
+            <span className="check-text">Мы ценим ваше время ⌛ и подберем удобное для вас рассписание занятий</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">Английский язык</span>
+            <span className="check-text">Наши методики делают обучение интересным и максимально эффективным</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">Скорочтение</span>
+            <span className="check-text">Наша программа постоянно совершенствуется, чтобы оставаться интересной для учеников и их родителей</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">Шахматы</span>
+            <span className="check-text">В нашей школе, мы предлагаем ндивидуальный подход к каждому ребенку</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">Мировая культура</span>
+            <span className="check-text">Фокус на результат: мы отслеживаем динамику процесса обучения и отправляем результаты вам</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">География и космос</span>
+            <span className="check-text">Гибкая система скидок, приятные бонусы и акции🎁🎁</span>
           </li>
         </ul>
       </div>
