@@ -35,7 +35,7 @@ function MainPage({courses}) {
       <IntroductionSection/>
       <AdvantagesSection/>
       <CoursesSection courses={courses}/>
-      <BottomSection/>
+      <BottomSection courses={courses}/>
       {
         scrollTop > appHeight * 2 && <ContactButton/>
       }

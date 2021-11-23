@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-around;
 }
+.footer-content a {
+    color: #8c8282;
+}
 
 .socials {
     padding: 2em ;

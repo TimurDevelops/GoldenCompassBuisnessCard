@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import "./BottomSection.css";
 import "./Form.scss";
 
-const BottomSection = () => {
+const BottomSection = ({courses}) => {
   return (
     <section className="bottom-section" id="contact">
       <div className="contact-section">
@@ -50,7 +50,7 @@ const BottomSection = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer courses={courses}/>
     </section>
   );
 }

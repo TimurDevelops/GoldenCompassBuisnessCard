@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.course-page-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    position: relative;
+    /*height: auto;*/
+    height: 100vh;
+    background-image: url("../img/bigCompassBg.jpeg");
+}
+
+.course-section-bg {
+    width: 45em;
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    padding: 2em;
+    background: #0a3131;
+    box-shadow: 0 0 10px 0 #565656;
+}
+
+.course-description {
+    background: #edb941;
+    padding: 1em 2em;
+    white-space: pre-wrap;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.course-description-header {
+    font-size: 1.2em;
+    padding: 1em 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.price-section-bg {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    background: #d2c8c8;
+    box-shadow: 0 0 10px 0 #565656;
+    padding: 2em;
+}
+
+.price-section {
+    display: flex;
+}
+
+.price-card {
+    margin: .5em;
+    padding: .5em;
+    border-radius: 3px;
+    background: white;
+    width: 7em;
+    height: 7em;
+    transition: all .2s ease;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.price-card:hover{
+    box-shadow: 0 0 10px 0 #8d8c8c;
+}
+
+.buy-button{
+    margin-top: 1em;
+    border-radius: 1em;
+    background: #479a11;
+    width: 80%;
+    text-align: center;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.buy-button-text{
+    position: relative;
+}
+
+/*.buy-button-text:after{*/
+/*    content: "";*/
+/*    display: block;*/
+/*    height: 2px;*/
+/*    background-color: #eed690;*/
+/*    width: 0;*/
+/*    left: -4px;*/
+/*    position: absolute;*/
+/*    transition: all .2s ease;*/
+/*}*/
+
+.buy-button:hover .buy-button-text:after{
+    width: calc(100% + 8px);
+}

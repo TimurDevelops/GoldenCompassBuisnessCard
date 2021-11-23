@@ -85,6 +85,19 @@
 
 }
 
+.course-section-card-img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    transform: rotate(20deg);
+}
+.course-section-card-img img{
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 1200px) {
     .courses-section{
         padding: 6em 1em 3em 1em;
