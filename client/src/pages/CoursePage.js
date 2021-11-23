@@ -1,15 +1,19 @@
 import React from "react";
-import Header from "../layout/Header";
-import PriceSection from "../layout/PriceSection";
-import CourseDescription from "../layout/CourseDescription";
+import {useParams} from "react-router-dom";
 
-function CoursePage() {
+import CoursePageSection from "../layout/CoursePageSection";
+import Header from "../layout/Header";
+
+
+function CoursePage({courses}) {
+  const {courseId} = useParams();
+
+  const course = courses.filter(i => i.link === courseId)
 
   return (
-    <div>
+    <div className={'course-page'}>
       <Header offset={0} appHeight={0} active={false}/>
-      <PriceSection/>
-      <CourseDescription/>
+      <CoursePageSection course={course}/>
     </div>
   );
 }

@@ -1,6 +1,9 @@
+import React from "react";
+
+import Footer from "./Footer";
+
 import "./BottomSection.css";
 import "./Form.scss";
-import Footer from "./Footer";
 
 const BottomSection = () => {
   return (

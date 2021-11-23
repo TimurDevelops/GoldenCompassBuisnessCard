@@ -1,6 +1,7 @@
-import './Footer.css';
+import React from "react";
 import {FaInstagram, FaVk, FaFacebook, FaPhone, FaMailBulk} from "react-icons/fa";
 import Title from "../img/title.png"
+import './Footer.css';
 
 
 const Footer = () => {

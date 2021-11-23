@@ -1,3 +1,4 @@
+import React from "react";
 import './IntroductionSection.css';
 import Title from "../img/title.png"
 

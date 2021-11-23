@@ -8,7 +8,7 @@ import BottomSection from "../layout/BottomSection";
 import ContactButton from "../layout/ContactButton";
 
 
-function MainPage() {
+function MainPage({courses}) {
   const appRef = React.createRef();
 
   const [scrollTop, setScrollTop] = useState();
@@ -34,7 +34,7 @@ function MainPage() {
       <Header offset={scrollTop} appHeight={appHeight}/>
       <IntroductionSection/>
       <AdvantagesSection/>
-      <CoursesSection/>
+      <CoursesSection courses={courses}/>
       <BottomSection/>
       {
         scrollTop > appHeight * 2 && <ContactButton/>
