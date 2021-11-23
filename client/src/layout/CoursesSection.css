@@ -82,3 +82,63 @@
 .card-text {
 
 }
+
+@media (max-width: 1200px) {
+    .courses-section{
+        padding: 6em 1em 3em 1em;
+    }
+    .card-img.teacher{
+        width: 72px;
+        height: 72px;
+    }
+    .card-img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 850px) {
+    .courses-section{
+        /*left: 0;*/
+    }
+    .card-header p{
+        font-size: 1.1em;
+    }
+    .card-img.teacher{
+        width: 55px;
+        height: 55px;
+    }
+    .card-img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 780px) {
+    .cards-wrapper .card-wrapper{
+        margin: .4em;
+        padding: .4em;
+    }
+    .card-text{
+        font-size: .8em;
+    }
+    .cards-header h2{
+        font-size: 1.5em;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+@media (max-width: 480px) {
+    .cards-wrapper .card-wrapper{
+        height: auto;
+    }
+    .cards-wrapper .card-wrapper{
+        margin: .2em;
+        padding: .2em;
+        flex: 1;
+    }
+    .courses-section{
+        padding: 1em 0 3em 0;
+    }
+}

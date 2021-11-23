@@ -6,21 +6,42 @@
     position: relative;
     /*height: auto;*/
     height: 100vh;
-    background-image: url("../img/mainImg.jpeg");
+    background-image: url("../img/mainImg.jpg");
 }
 
 .introduction-header{
     font-family: 'Ubuntu',Arial,sans-serif;
-    color: white;
-    font-size: 2.5em;
+    color: #3f6a63;
+    font-size: 2em;
     font-weight: bold;
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 7%;
     width: 50%;
     line-height: 1.35em;
 }
-
+.introduction-header-img{
+    margin: 0;
+    height: 120px;
+}
+.introduction-header-img img{
+     height: 100%;
+ }
 .introduction-header span{
-    background-color: #114d4d;
+    /*background-color: #114d4d;*/
+}
+@media (max-width: 480px) {
+    .introduction-header {
+        color: white;
+    }
+    .introduction-header span{
+        background-color: #70977c;
+    }
+    .introduction-header{
+        width: auto;
+    }
+    .introduction-header-img{
+        margin: 0;
+        height: 80px;
+    }
 }

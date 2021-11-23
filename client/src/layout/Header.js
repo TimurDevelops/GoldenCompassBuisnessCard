@@ -1,22 +1,22 @@
 import './Header.css';
 
-const Header = ({offset, appHeight}) => {
+const Header = ({offset, appHeight, active=true}) => {
   const menuItems = [{
     title: "Главная",
     link: "main",
-    active: offset >= 0 && offset < appHeight
+    active: active && offset >= 0 && offset < appHeight
   }, {
     title: "Наши преимущества",
     link: "advantages",
-    active: offset >= appHeight && offset < appHeight * 2
+    active: active && offset >= appHeight && offset < appHeight * 2
   }, {
     title: "Курсы",
     link: "courses",
-    active: offset >= appHeight * 2 && offset < appHeight * 3
+    active: active && offset >= appHeight * 2 && offset < appHeight * 3
   }, {
     title: "Свяжитесь с нами",
     link: "contact",
-    active: offset >= appHeight * 3 && offset < appHeight * 4
+    active: active && offset >= appHeight * 3 && offset < appHeight * 4
   }]
 
   return (
@@ -26,7 +26,7 @@ const Header = ({offset, appHeight}) => {
           menuItems.map((i) => {
             return (
               <div key={i.title} className={`header-item ${i.active ? 'active' : ''}`}>
-                <a href={`#${i.link}`}>
+                <a href={`../main#${i.link}`}>
                   <span>{i.title}<span className={'underline'}/></span>
                 </a>
               </div>

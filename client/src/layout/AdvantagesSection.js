@@ -6,7 +6,7 @@ const AdvantagesSection = () => {
     <section className="advantages-section" id="advantages">
       <div className="advantages-card">
         <div className="about-header">
-          <span className="about-header-text">Преимущества Золотого Компаса:</span>
+          <span className="about-header-text">Преимущества Golden Compass:</span>
         </div>
 
         <ul className="about-us">
