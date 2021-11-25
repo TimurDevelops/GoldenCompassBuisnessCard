@@ -65,6 +65,12 @@
     align-items: center;
     font-family: 'Oswald', sans-serif;
 }
+.price-card a {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
 
 .price-card:hover{
     box-shadow: 0 0 10px 0 #8d8c8c;

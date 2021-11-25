@@ -23,21 +23,25 @@ function CoursePageSection({course}) {
                 return (
                   <div key={index} className={"price-card"}>
                     {i.lessons} занятий/{i.price}
-                    <div className={"buy-button"}>
+                    <a href={`../main#contact`}>
+                      <div className={"buy-button"}>
                       <span className={"buy-button-text"}>
                         Заказать
                       </span>
-                    </div>
+                      </div>
+                    </a>
                   </div>
                 )
               }) :
               <div className={"price-card"}>
                 Стоимость курса: {course.price}
-                <div className={"buy-button"}>
+                <a href={`../main#contact`}>
+                  <div className={"buy-button"}>
                   <span className={"buy-button-text"}>
                     Заказать
                   </span>
-                </div>
+                  </div>
+                </a>
               </div>
           }
 
