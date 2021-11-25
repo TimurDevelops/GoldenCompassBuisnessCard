@@ -1,5 +1,5 @@
 import React from "react";
-import {FaInstagram, FaVk, FaFacebook, FaPhone, FaMailBulk} from "react-icons/fa";
+import {FaInstagram, FaVk, FaPhone, FaMailBulk} from "react-icons/fa";
 import Title from "../img/title.png"
 import {Link} from 'react-router-dom';
 
@@ -18,13 +18,10 @@ const Footer = ({courses}) => {
           </div>
           <div className={"socials-links"}>
             <div className={"social-link"}>
-              <a href="#"><FaInstagram/></a>
+              <a href="https://instagram.com/gc_school_?utm_medium=copy_link"><FaInstagram/></a>
             </div>
             <div className={"social-link"}>
-              <a href="#"><FaVk/></a>
-            </div>
-            <div className={"social-link"}>
-              <a href="#"><FaFacebook/></a>
+              <a href="https://vk.com/club208886097"><FaVk/></a>
             </div>
           </div>
 

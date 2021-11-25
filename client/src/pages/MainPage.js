@@ -37,7 +37,7 @@ function MainPage({courses}) {
       <CoursesSection courses={courses}/>
       <BottomSection courses={courses}/>
       {
-        scrollTop > appHeight * 2 && <ContactButton/>
+        scrollTop < appHeight * 2 + appHeight / 2 && <ContactButton/>
       }
     </div>
   );
