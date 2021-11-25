@@ -65,6 +65,7 @@
     align-items: center;
     font-family: 'Oswald', sans-serif;
 }
+
 .price-card a {
     color: inherit;
     text-decoration: none;
@@ -72,11 +73,11 @@
     display: block;
 }
 
-.price-card:hover{
+.price-card:hover {
     box-shadow: 0 0 10px 0 #8d8c8c;
 }
 
-.buy-button{
+.buy-button {
     margin-top: 1em;
     border-radius: 1em;
     background: #479a11;
@@ -86,7 +87,7 @@
     cursor: pointer;
 }
 
-.buy-button-text{
+.buy-button-text {
     position: relative;
 }
 
@@ -101,6 +102,78 @@
 /*    transition: all .2s ease;*/
 /*}*/
 
-.buy-button:hover .buy-button-text:after{
+.buy-button:hover .buy-button-text:after {
     width: calc(100% + 8px);
+}
+
+@media (max-width: 900px) {
+    .course-section-bg {
+        right: 2%;
+    }
+}
+
+@media (max-width: 850px) {
+    .course-description {
+        padding: 1em 1em;
+    }
+}
+
+@media (max-width: 750px) {
+    .course-section-bg {
+        width: 35em;
+
+    }
+}
+
+@media (max-width: 750px) {
+
+    .course-section-bg {
+        padding: .5em;
+        width: 100%;
+        left: 0;
+        box-sizing: border-box;
+    }
+    .course-section-card-img{
+        width: 100px;
+        height: 100px;
+        top: 0;
+        right: 0;
+    }
+    .price-section-bg{
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .course-description{
+        font-size: 1em;
+    }
+    .course-page-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .course-section-bg{
+        top: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    .price-card{
+        font-size: 1em;
+        width: 5em;
+        position: relative;
+    }
+    .price-section-bg{
+        top: auto;
+        position: relative;
+    }
+    .price-section{
+        top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

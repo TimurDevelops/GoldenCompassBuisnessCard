@@ -4,7 +4,7 @@ import "./CoursePageSection.css";
 
 function CoursePageSection({course}) {
   return (
-    <section className={'course-page-section'}>
+    <section className={'course-page-section'} id={"course-page-section"}>
       <div className={"course-section-bg"}>
         <div className="course-section-card-img"><img src={course.icon} alt=""/></div>
 

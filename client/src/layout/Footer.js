@@ -37,7 +37,7 @@ const Footer = ({courses}) => {
 
           {courses.map((i) => {
             return (
-              <Link to={i.link}>
+              <Link to={i.link + "#contact"}>
                 <p className={"footer-course"}>{i.title}</p>
               </Link>
 
