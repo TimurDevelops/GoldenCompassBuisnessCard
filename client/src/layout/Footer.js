@@ -27,7 +27,7 @@ const Footer = ({courses}) => {
 
           <div className={"contacts"}>
             <p className={"contact-line contact-title"}>Наши контакты</p>
-            <p className={"contact-line"}><FaPhone/>+7 (000) 000-00-00</p>
+            <p className={"contact-line"}><FaPhone/>+7 (900) 242-57-54</p>
             <p className={"contact-line"}><FaMailBulk/>gcompassss@gmail.com</p>
           </div>
         </div>
