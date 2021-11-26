@@ -5,25 +5,25 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: center center;
     position: relative;
     /*height: auto;*/
     height: 100vh;
-    background-image: url("../img/bigCompassBg.jpeg");
+    /*background-image: url("../img/bigCompassBg.jpeg");*/
 }
 
 .course-section-bg {
-    width: 45em;
+    width: 35em;
     position: absolute;
     top: 13%;
     right: 10%;
-    padding: 2em;
+    padding: .5em;
     background: #0a3131;
     box-shadow: 0 0 10px 0 #565656;
 }
 
 .course-description {
-    background: #edb941;
+    /*background: #edb941;*/
     padding: 1em 2em;
     white-space: pre-wrap;
     font-size: 1.1em;
@@ -39,7 +39,7 @@
 
 .price-section-bg {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 20%;
     background: #d2c8c8;
     box-shadow: 0 0 10px 0 #565656;
@@ -119,13 +119,6 @@
 }
 
 @media (max-width: 750px) {
-    .course-section-bg {
-        width: 35em;
-
-    }
-}
-
-@media (max-width: 750px) {
 
     .course-section-bg {
         padding: .5em;
@@ -133,15 +126,15 @@
         left: 0;
         box-sizing: border-box;
     }
-    .course-section-card-img{
-        width: 100px;
-        height: 100px;
-        top: 0;
-        right: 0;
-    }
+    /*.course-section-card-img{*/
+    /*    width: 100px;*/
+    /*    height: 100px;*/
+    /*    top: 0;*/
+    /*    right: 0;*/
+    /*}*/
     .price-section-bg{
-        left: 0;
-        right: 0;
+        left: 0!important;
+        right: 0!important;
         display: flex;
         justify-content: center;
     }
@@ -157,7 +150,8 @@
         justify-content: space-around;
     }
     .course-section-bg{
-        top: auto;
+        left: 0!important;
+        top: auto!important;
         position: relative;
         overflow: hidden;
     }

@@ -4,18 +4,18 @@ import "./CoursePageSection.css";
 
 function CoursePageSection({course}) {
   return (
-    <section className={'course-page-section'} id={"course-page-section"}>
-      <div className={"course-section-bg"}>
-        <div className="course-section-card-img"><img src={course.icon} alt=""/></div>
+    <section className={'course-page-section'} id={"course-page-section"} style={{backgroundImage: `url(${course.background})`}}>
+      <div className={"course-section-bg"} style={{left: `${course.blockPosition.x}%`, top: `${course.blockPosition.y}%`}}>
+        {/*<div className="course-section-card-img"><img src={course.icon} alt=""/></div>*/}
 
-        <div className={"course-description"}>
+        <div className={"course-description"} style={{background: course.blockBackground}}>
           <div className={"course-description-header"}>
             {course.title}
           </div>
           {course.description}
         </div>
       </div>
-      <div className={"price-section-bg"}>
+      <div className={"price-section-bg"} style={{left: `${course.pricePosition.x}%`}}>
         <div className={"price-section"}>
           {
             course.plans ?

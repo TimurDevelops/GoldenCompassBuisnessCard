@@ -37,7 +37,7 @@ const Footer = ({courses}) => {
 
           {courses.map((i) => {
             return (
-              <Link to={i.link + "#course-page-section"}>
+              <Link key={i.link} to={i.link + "#course-page-section"}>
                 <p className={"footer-course"}>{i.title}</p>
               </Link>
 

@@ -3,13 +3,23 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import MainPage from "./pages/MainPage";
 import CoursePage from "./pages/CoursePage";
-import chessIcon from "./img/chessIcon.png";
-import cultureIcon from "./img/cultureIcon.png";
+// Icons
 import englishIcon from "./img/englishIcon.png";
-import mentalArithmeticIcon from "./img/mentalArithmeticIcon.png";
-import preSchoolIcon from "./img/preSchoolIcon.png";
 import speechTherapyIcon from "./img/speechTherapyIcon.png";
+import mentalArithmeticIcon from "./img/mentalArithmeticIcon.png";
+import cultureIcon from "./img/cultureIcon.png";
+import preSchoolIcon from "./img/preSchoolIcon.png";
 import speedReadingIcon from "./img/speedReadingIcon.png";
+import chessIcon from "./img/chessIcon.png";
+
+// Icons
+import englishBg from "./img/englishBg.jpeg";
+import speechTherapyBg from "./img/lampBg.jpeg";
+import mentalArithmeticBg from "./img/abacusBg.jpeg";
+import cultureBg from "./img/cultureBg.jpeg";
+import preSchoolBg from "./img/handsBg.jpeg";
+import speedReadingBg from "./img/teacherBookBg.jpeg";
+import chessBg from "./img/chessBg.jpeg";
 
 import './App.css';
 
@@ -39,7 +49,16 @@ function App() {
       }, {
         lessons: 24,
         price: 19900,
-      }]
+      }],
+      background: englishBg,
+      blockPosition: {
+        x: 50,
+        y: 20,
+      },
+      pricePosition: {
+        x: 49,
+      },
+      blockBackground: "#daa754"
     },
     {
       link: '/course/speech-therapy',
@@ -59,7 +78,16 @@ function App() {
       }, {
         lessons: 30,
         price: 33000,
-      }]
+      }],
+      background: speechTherapyBg,
+      blockPosition: {
+        x: 55,
+        y: 20,
+      },
+      pricePosition: {
+        x: 50,
+      },
+      blockBackground: "#ecba4b"
     },
     {
       link: '/course/mental-arithmetic',
@@ -86,7 +114,16 @@ function App() {
       }, {
         lessons: 30,
         price: 22500,
-      }]
+      }],
+      background: mentalArithmeticBg,
+      blockPosition: {
+        x: 5,
+        y: 25,
+      },
+      pricePosition: {
+        x: 5,
+      },
+      blockBackground: "#ebd780"
     },
     {
       link: '/course/culture',
@@ -100,6 +137,15 @@ function App() {
       icon: cultureIcon,
       plans: false,
       price: 6000,
+      background: cultureBg,
+      blockPosition: {
+        x: 55,
+        y: 30,
+      },
+      pricePosition: {
+        x: 50,
+      },
+      blockBackground: "#fcf6b8"
     },
     {
       link: '/course/pre-school',
@@ -112,7 +158,6 @@ function App() {
         "\t - Подготовка к школе без стресса и с интересом ",
       icon: preSchoolIcon,
       plans: true,
-      price: 6000,
       prices: [{
         lessons: 8,
         price: 7900,
@@ -123,6 +168,15 @@ function App() {
         lessons: 24,
         price: 19900,
       }],
+      background: preSchoolBg,
+      blockPosition: {
+        x: 10,
+        y: 15,
+      },
+      pricePosition: {
+        x: 20,
+      },
+      blockBackground: "#ecd15c"
     },
     {
       link: '/course/speed-reading',
@@ -140,7 +194,16 @@ function App() {
         "\t - Формирование навыка оперативно решать поставленную задачу",
       icon: speedReadingIcon,
       plans: false,
-      price: 7900
+      price: 7900,
+      background: speedReadingBg,
+      blockPosition: {
+        x: 50,
+        y: 20,
+      },
+      pricePosition: {
+        x: 50,
+      },
+      blockBackground: "#99b3c2"
     },
     {
       link: '/course/chess',
@@ -163,6 +226,15 @@ function App() {
         lessons: 24,
         price: 14400,
       }],
+      background: chessBg,
+      blockPosition: {
+        x: 48,
+        y: 20,
+      },
+      pricePosition: {
+        x: 50,
+      },
+      blockBackground: "#edd2a3"
     },
   ]
 
