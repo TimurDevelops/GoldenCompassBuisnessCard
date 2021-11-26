@@ -15,7 +15,6 @@
 }
 
 
-
 .courses-header-bg {
     background: linear-gradient(to right, #0a3131, #354e4f, #0a3131);
     position: absolute;
@@ -54,6 +53,7 @@
     width: 100px;
     height: 100px;
 }
+
 .card-img.teacher {
     padding: 5px;
     width: 95px;
@@ -76,7 +76,8 @@
     font-size: 1.2em;
     letter-spacing: -0.5px
 }
-.card-text p{
+
+.card-text p {
     padding: 0;
     margin: 0;
 }
@@ -85,7 +86,7 @@
 
 }
 
-.course-section-card-img{
+.course-section-card-img {
     width: 200px;
     height: 200px;
     position: absolute;
@@ -93,67 +94,91 @@
     right: -40px;
     transform: rotate(20deg);
 }
-.course-section-card-img img{
+
+.course-section-card-img img {
     width: 100%;
     height: 100%;
 }
 
 @media (max-width: 1200px) {
-    .courses-section{
+    .courses-section {
         padding: 6em 1em 3em 1em;
     }
-    .card-img.teacher{
+
+    .card-img.teacher {
         width: 72px;
         height: 72px;
     }
-    .card-img{
+
+    .card-img {
         width: 80px;
         height: 80px;
     }
 }
 
 @media (max-width: 850px) {
-    .courses-section{
+    .courses-section {
         /*left: 0;*/
     }
-    .card-header p{
-        font-size: 1.1em;
+
+    .card-header p {
+        font-size: .95em;
     }
-    .card-img.teacher{
+
+    .card-img.teacher {
         width: 55px;
         height: 55px;
     }
-    .card-img{
+
+    .card-img {
         width: 60px;
         height: 60px;
     }
 }
 
 @media (max-width: 780px) {
-    .cards-wrapper .card-wrapper{
+    .cards-wrapper .card-wrapper {
         margin: .4em;
         padding: .4em;
     }
-    .card-text{
+
+    .card-text {
         font-size: .8em;
     }
-    .cards-header h2{
+
+    .cards-header h2 {
         font-size: 1.5em;
         padding: 0;
         margin: 0;
     }
-
 }
+
 @media (max-width: 480px) {
-    .cards-wrapper .card-wrapper{
+    .cards-wrapper .card-wrapper {
         height: auto;
     }
-    .cards-wrapper .card-wrapper{
+
+    .cards-wrapper .card-wrapper {
         margin: .2em;
-        padding: .2em;
+        padding: 1em .2em .2em .2em;
         flex: 1;
     }
-    .courses-section{
-        padding: 0 0 0 0;
+
+    .courses-section {
+        padding: 2em 0 0 0;
+    }
+
+    .card-wrapper {
+        position: relative;
+    }
+
+    .cards-wrapper {
+        margin: 1em .2em;
+    }
+
+    .card-img {
+        position: absolute;
+        top: -20px;
+        right: -10px;
     }
 }

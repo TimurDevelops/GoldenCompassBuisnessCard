@@ -89,7 +89,7 @@
 
 @media (max-width: 480px) {
     .check-text{
-        font-size: 1.05em;
+        font-size: .8em;
     }
     .about-us{
         padding: 0;

@@ -161,6 +161,7 @@
         position: relative;
     }
     .price-section-bg{
+        padding: 0;
         top: auto;
         position: relative;
     }
