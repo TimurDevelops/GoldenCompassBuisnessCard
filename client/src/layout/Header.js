@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
+
 import './Header.css';
 
-const Header = ({offset, appHeight, active=true}) => {
+const Header = ({offset, appHeight, active = true}) => {
   const menuItems = [{
     title: "Главная",
     link: "main",
@@ -20,20 +21,46 @@ const Header = ({offset, appHeight, active=true}) => {
     active: active && offset >= appHeight * 3 && offset < appHeight * 4
   }]
 
+  const [headerOpen, setHeaderOpen] = useState(false)
+
   return (
-    <header className="header">
-      <div className={"header-wrapper"}>
-        {
-          menuItems.map((i) => {
-            return (
-              <div key={i.title} className={`header-item ${i.active ? 'active' : ''}`}>
-                <a href={`../main#${i.link}`}>
-                  <span>{i.title}<span className={'underline'}/></span>
-                </a>
-              </div>
-            )
-          })
-        }
+    <header>
+      <div className="header">
+        <div className={"header-wrapper"}>
+          {
+            menuItems.map((i) => {
+              return (
+                <div key={i.title} className={`header-item ${i.active ? 'active' : ''}`}>
+                  <a href={`../main#${i.link}`}>
+                    <span>{i.title}<span className={'underline'}/></span>
+                  </a>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+      <div className={`mobile-header ${headerOpen ? 'active' : ''}`}>
+        <div className={`mobile-header-toggle ${headerOpen ? 'active' : ''}`} onClick={() => setHeaderOpen(!headerOpen)}>
+          <div className={"burger"}>
+            <span className={"line first-line"}/>
+            <span className={"line second-line"}/>
+            <span className={"line third-line"}/>
+          </div>
+        </div>
+        <div className={`mobile-header-wrapper`}>
+          {
+            menuItems.map((i) => {
+              return (
+                <div key={i.title} className={`mobile-header-item header-item ${i.active ? 'active' : ''}`}>
+                  <a href={`../main#${i.link}`}>
+                    <span>{i.title}<span className={'underline'}/></span>
+                  </a>
+                </div>
+              )
+            })
+          }
+        </div>
       </div>
     </header>
   );
