@@ -141,7 +141,22 @@
         justify-content: center;
     }
 }
+@media (max-height: 800px) {
+    .course-section-bg{
+        top: 15%!important;
+    }
+    .course-description{
+        max-height: 15em;
+        overflow-y: scroll;
+    }
+    .course-description::-webkit-scrollbar {
+        display: none;
+    }
+    .price-section-bg{
+        top: 65%!important;
+    }
 
+}
 @media (max-width: 500px) {
     .course-page-section {
         background-image: none!important;
