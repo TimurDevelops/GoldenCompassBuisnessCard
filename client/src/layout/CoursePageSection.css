@@ -5,7 +5,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    /*background-position: center center;*/
     position: relative;
     /*height: auto;*/
     height: 100vh;
@@ -28,6 +28,7 @@
     white-space: pre-wrap;
     font-size: 1.1em;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .course-description-header {
@@ -64,6 +65,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 
 .price-card a {
@@ -141,6 +143,10 @@
 }
 
 @media (max-width: 500px) {
+    .course-page-section {
+        background-image: none!important;
+    }
+
     .course-description{
         font-size: 1em;
     }

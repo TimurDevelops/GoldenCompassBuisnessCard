@@ -58,7 +58,9 @@ function App() {
       pricePosition: {
         x: 49,
       },
-      blockBackground: "#daa754"
+      blockBackground: "#daa754",
+      backgroundPosition: "left bottom",
+      backgroundColor: "#697889"
     },
     {
       link: '/course/speech-therapy',
@@ -87,7 +89,9 @@ function App() {
       pricePosition: {
         x: 50,
       },
-      blockBackground: "#ecba4b"
+      blockBackground: "#ecba4b",
+      backgroundPosition: "left bottom",
+      backgroundColor: "#3b615e"
     },
     {
       link: '/course/mental-arithmetic',
@@ -123,7 +127,9 @@ function App() {
       pricePosition: {
         x: 5,
       },
-      blockBackground: "#ebd780"
+      blockBackground: "#ebd780",
+      backgroundPosition: "right bottom",
+      backgroundColor: "#97afc0"
     },
     {
       link: '/course/culture',
@@ -145,7 +151,9 @@ function App() {
       pricePosition: {
         x: 50,
       },
-      blockBackground: "#fcf6b8"
+      blockBackground: "#fcf6b8",
+      backgroundPosition: "left bottom",
+      backgroundColor: "#b7b7bc"
     },
     {
       link: '/course/pre-school',
@@ -176,7 +184,9 @@ function App() {
       pricePosition: {
         x: 20,
       },
-      blockBackground: "#ecd15c"
+      blockBackground: "#ecd15c",
+      backgroundPosition: "right top",
+      backgroundColor: "#d9d0a5"
     },
     {
       link: '/course/speed-reading',
@@ -203,7 +213,9 @@ function App() {
       pricePosition: {
         x: 50,
       },
-      blockBackground: "#99b3c2"
+      blockBackground: "#99b3c2",
+      backgroundPosition: "left bottom",
+      backgroundColor: "#a09c8d"
     },
     {
       link: '/course/chess',
@@ -234,7 +246,9 @@ function App() {
       pricePosition: {
         x: 50,
       },
-      blockBackground: "#edd2a3"
+      blockBackground: "#edd2a3",
+      backgroundPosition: "left bottom",
+      backgroundColor: "#1a4242"
     },
   ]
 

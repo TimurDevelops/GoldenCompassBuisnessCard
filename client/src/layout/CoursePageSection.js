@@ -4,7 +4,11 @@ import "./CoursePageSection.css";
 
 function CoursePageSection({course}) {
   return (
-    <section className={'course-page-section'} id={"course-page-section"} style={{backgroundImage: `url(${course.background})`}}>
+    <section className={'course-page-section'} id={"course-page-section"} style={{
+      backgroundImage: `url(${course.background})`,
+      backgroundPosition: course.backgroundPosition,
+      backgroundColor: course.backgroundColor,
+    }}>
       <div className={"course-section-bg"} style={{left: `${course.blockPosition.x}%`, top: `${course.blockPosition.y}%`}}>
         {/*<div className="course-section-card-img"><img src={course.icon} alt=""/></div>*/}
 
