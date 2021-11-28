@@ -11,9 +11,10 @@ const http = require("http");
 const credentials = {};
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.yandex.ru',
+  // host: 'smtp.yandex.ru',
+  host: 'smtp.gmail.com',
   port: 465,
-  secure: true, // true for 465, false for other ports
+  secure: true,
   auth: {
     user: emailUser,
     pass: emailPass

@@ -8,13 +8,14 @@ import "./Form.scss";
 import api from "../utils/api";
 
 const BottomSection = ({courses}) => {
+  const [name, setName] = useState()
   const [email, setEmail] = useState()
   const [phone, setPhone] = useState()
   const subject = "Запрос на консультацию"
 
   const sendMail = (e) => {
     e.preventDefault();
-    let body = ""
+    let body = `\nУказанное имя: ${name}\n`
 
     if (!email && !phone) {
       alert("Укажите ваш телефон или почту, чтобы наши специалисты могли с вами связаться")
@@ -22,13 +23,13 @@ const BottomSection = ({courses}) => {
     }
 
     if (email && phone) {
-      body = `Телефон клиента: ${phone} \n Адресс электронной почты: ${email}`
+      body += `Телефон клиента: ${phone} \nАдресс электронной почты: ${email}`
     } else if (email) {
-      body = `Адресс электронной почты: ${email}`
+      body += `Адресс электронной почты: ${email}`
     } else if (phone) {
-      body = `Телефон клиента: ${phone}`
+      body += `Телефон клиента: ${phone}`
     }
-
+    console.log(body)
     api.post('/send-email', {
       sendToEmail,
       subject,
@@ -55,7 +56,7 @@ const BottomSection = ({courses}) => {
                 <div className="inputs-wrapper">
                   <div className="form-group field">
                     <input autoComplete="off" type="input" className="form-field" placeholder="Имя" name="login"
-                           id="login" required/>
+                           id="login" onChange={e => setName(e.target.value)} required/>
                     <label htmlFor="login" className="form-label">Имя</label>
                   </div>
 
