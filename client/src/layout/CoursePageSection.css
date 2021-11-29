@@ -111,6 +111,11 @@
 @media (max-width: 900px) {
     .course-section-bg {
         right: 2%;
+        left: auto!important;
+    }
+    .price-section-bg {
+        right: 2%;
+        left: auto!important;
     }
 }
 
@@ -125,6 +130,7 @@
     .course-section-bg {
         padding: .5em;
         width: 100%;
+        right: 0!important;
         left: 0;
         box-sizing: border-box;
     }
