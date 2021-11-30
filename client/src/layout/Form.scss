@@ -155,6 +155,10 @@ $gray: #9b9b9b;
   .form-field:focus ~ .form-label{
     top: -12px;
   }
+
+  .form-label {
+    top: -12px;
+  }
   .submit-btn-wrapper{
     margin-top: 0;
   }
