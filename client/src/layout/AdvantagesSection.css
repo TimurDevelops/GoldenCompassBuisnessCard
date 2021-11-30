@@ -89,7 +89,7 @@
 
 @media (max-width: 480px) {
     .check-text{
-        font-size: .8em;
+        font-size: .9em;
     }
     .about-us{
         padding: 0;
@@ -103,9 +103,6 @@
 }
 
 @media (max-width: 400px) {
-    .about-header-text {
-        font-size: 1.2em;
-    }
     .about-us-point{
         margin: 0;
         padding: .2em;
@@ -113,5 +110,13 @@
     .check {
         margin: 0 .3em 0 0;
         min-width: 25px;
+    }
+}
+@media (max-width: 350px) {
+    .check-text{
+        font-size: .8em;
+    }
+    .about-header-text {
+        font-size: 1.2em;
     }
 }

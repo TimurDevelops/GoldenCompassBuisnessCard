@@ -33,15 +33,26 @@
 @media (max-width: 480px) {
     .introduction-header {
         color: white;
+        width: auto;
+        font-size: 1.7em;
     }
     .introduction-header span{
         background-color: #70977c;
     }
-    .introduction-header{
-        width: auto;
-    }
     .introduction-header-img{
         margin: 0;
         height: 80px;
+    }
+}
+
+@media (max-width: 350px) {
+    .introduction-header {
+        top: 60%;
+        left: 0;
+        font-size: 1.5em;
+        padding: .5em;
+    }
+    .introduction-header-img{
+        height: 70px;
     }
 }

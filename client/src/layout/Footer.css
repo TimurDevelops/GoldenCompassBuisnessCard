@@ -92,7 +92,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 350px) {
     .socials{
         padding: 1em 0;
     }
