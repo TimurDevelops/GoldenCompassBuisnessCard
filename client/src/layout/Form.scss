@@ -134,3 +134,57 @@ $gray: #9b9b9b;
   font-size: 1em;
   color: #fefefe;
 }
+
+@media (max-width: 480px) {
+  .golden-compass{
+    font-size: .85em;
+  }
+  .form {
+    padding: 15px;
+  }
+  .form-field{
+    font-size: .8em;
+    padding: 5px 7px
+  }
+  .form-group{
+    padding: 2px 0;
+  }
+  .form-field:placeholder-shown ~ .form-label{
+    top: 15px;
+  }
+  .form-field:focus ~ .form-label{
+    top: 0;
+  }
+  .submit-btn-wrapper{
+    margin-top: 0;
+  }
+  #loginBtn{
+    font-size: .8em;
+    padding: 10px;
+  }
+  .footer{
+    height: 50%;
+  }
+  .socials{
+    padding: 0 .3em;
+  }
+  .contacts{
+    margin: .2em 0;
+  }
+  .contact-line{
+    font-size: .75em;
+    margin-left: .3em;
+  }
+  .lessons{
+    padding: 0 0 1em 0;
+  }
+  .footer-courses-title{
+    font-size: 1em;
+    padding-top: .3em;
+    margin: 0;
+  }
+  .footer-course{
+    font-size: .85em;
+    margin: 0;
+  }
+}
