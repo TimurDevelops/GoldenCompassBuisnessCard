@@ -33,7 +33,7 @@ const AdvantagesSection = () => {
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>
-            <span className="check-text">В нашей школе, мы предлагаем ндивидуальный подход к каждому ребенку</span>
+            <span className="check-text">В нашей школе, мы предлагаем индивидуальный подход к каждому ребенку</span>
           </li>
           <li className="about-us-point">
             <span className="check"><FaCheck/></span>

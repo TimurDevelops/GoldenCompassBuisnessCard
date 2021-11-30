@@ -4,22 +4,28 @@ const fs = require("fs");
 const nodemailer = require('nodemailer');
 
 const {env} = require('./config.json');
-const {emailUser} = require('./config.json');
-const {emailPass} = require('./config.json');
+const {EMAIL_USER,
+  EMAIL_PASS,
+  OAUTH_CLIENT_ID,
+  OAUTH_CLIENT_SECRET,
+  OAUTH_REFRESH_TOKEN} = require('./config.json');
 const https = require("https");
 const http = require("http");
 const credentials = {};
 
 const transporter = nodemailer.createTransport({
-  // host: 'smtp.yandex.ru',
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
+  service: 'gmail',
   auth: {
-    user: emailUser,
-    pass: emailPass
+    type: 'OAuth2',
+    user: EMAIL_USER,
+    pass: EMAIL_PASS,
+    clientId: OAUTH_CLIENT_ID,
+    clientSecret: OAUTH_CLIENT_SECRET,
+    refreshToken: OAUTH_REFRESH_TOKEN
   }
 });
+
+transporter.verify().then(console.log).catch(console.error);
 
 if (env === 'prod'){
   const privateKey = fs.readFileSync('./sslcert/golden-compass-app.key', 'utf8');
@@ -45,7 +51,7 @@ app.post('/send-email', (req, res) => {
   const {sendToEmail, subject, body} = req.body;
 
   const mailOptions = {
-    from: emailUser,
+    from: EMAIL_USER,
     to: sendToEmail,
     subject: subject,
     text: body
