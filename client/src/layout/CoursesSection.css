@@ -161,11 +161,12 @@
     .cards-wrapper .card-wrapper {
         margin: .2em;
         padding: 1em .2em .2em .2em;
-        flex: 1;
+        flex: 1 1 45%;
     }
 
     .courses-section {
-        padding: 2em 0 0 0;
+        overflow-y: scroll;
+        padding: 2em 0 4.1em 0;
     }
 
     .card-wrapper {
@@ -176,9 +177,4 @@
         margin: 1em .2em;
     }
 
-    .card-img {
-        position: absolute;
-        top: -20px;
-        right: -10px;
-    }
 }

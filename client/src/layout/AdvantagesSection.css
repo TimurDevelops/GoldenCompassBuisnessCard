@@ -101,3 +101,17 @@
         padding: 1em .5em;
     }
 }
+
+@media (max-width: 400px) {
+    .about-header-text {
+        font-size: 1.2em;
+    }
+    .about-us-point{
+        margin: 0;
+        padding: .2em;
+    }
+    .check {
+        margin: 0 .3em 0 0;
+        min-width: 25px;
+    }
+}
