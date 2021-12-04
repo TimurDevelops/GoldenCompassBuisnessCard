@@ -176,5 +176,23 @@
     .cards-wrapper {
         margin: 1em .2em;
     }
+}
 
+@media (max-height: 950px) {
+    .card-img {
+        width: 60px;
+        height: 60px;
+    }
+    .cards-wrapper .card-wrapper{
+        height: 12em
+    }
+}
+
+@media (max-height: 950px) {
+    .courses-section{
+        overflow-y: scroll;
+    }
+    .courses-section::-webkit-scrollbar {
+        display: none;
+    }
 }
