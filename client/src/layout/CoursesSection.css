@@ -184,7 +184,7 @@
         height: 60px;
     }
     .cards-wrapper .card-wrapper{
-        height: 12em
+        height: auto;
     }
 }
 

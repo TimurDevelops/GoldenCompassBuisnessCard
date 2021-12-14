@@ -25,6 +25,10 @@ const Header = ({offset, appHeight, active = true}) => {
 
   return (
     <header>
+      <div className={"special-offer"}>
+        Оставьте нам свои <a href={`#contact`}>Контакты</a>, и мы пришлём вам на почту гайд с упражнениями по нейронным связям
+      </div>
+
       <div className="header">
         <div className={"header-wrapper"}>
           {

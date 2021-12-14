@@ -7,6 +7,18 @@
     z-index: 500;
     background: linear-gradient(to right, #35675ccc, #638e7bcc, #2d5e5bcc);
 }
+.special-offer{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0a3131;
+    z-index: 600;
+    color: #d2c8c8;
+    text-align: center;
+}
+.special-offer a{
+    color: #e2b249;
+}
 
 .header a {
     text-decoration: none;
@@ -130,7 +142,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    margin: 1em;
+    margin: 2.5em 1em 1em 1em;
 }
 
 .line {
@@ -164,6 +176,9 @@
 }
 
 @media (max-width: 900px) {
+    .special-offer{
+        font-size: .75em;
+    }
     .header {
         display: none;
         height: 50px;
@@ -171,5 +186,6 @@
 
     .mobile-header {
         display: block;
+        z-index: 700;
     }
 }
