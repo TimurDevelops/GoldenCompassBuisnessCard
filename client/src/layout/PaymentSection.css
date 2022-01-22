@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.payment-header {
+    flex: 1;
+    border: 1px solid #d2c8c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment-logo {
+    height: 100px;
+}
+
+.payment-logo img {
+    height: 100%;
+}
+
+.content {
+    flex: 7;
+    display: flex;
+}
+
+.payment-area {
+    flex: 4;
+    padding: 1em;
+    border: 1px solid #d2c8c8;
+}
+
+.payment-area-wrapper {
+    box-shadow: 0 0 10px 0 rgba(86, 86, 86, 0.45);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.payment-course-description {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #d2c8c8;
+}
+
+.payment-course-description-wrapper {
+    position: relative;
+    display: flex;
+    align-content: end;
+    justify-content: end;
+    flex-direction: column;
+    padding: .5em;
+    margin: 1em;
+    width: 20em;
+    height: 25em;
+    border: 2px solid #bec3ad;
+    box-shadow: 0 0 10px 0 rgba(86, 86, 86, 0.45);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #bec3ad, #dcd5b6, #f6ffe0);
+}
+
+.payment-course-section-card-img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    transform: rotate(20deg);
+}
+
+.payment-course-section-card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.payment-course-title {
+    font-family: 'Roboto', sans-serif;
+}
+
+.payment-course-title-text {
+    font-size: 1.5em;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: #3a302d;
+}
+
+.payment-course-title {
+    margin: .3em;
+}
+
+.payment-course-price {
+    margin: .3em;
+}
+
+.payment-course-price-text {
+    font-size: 1.5em;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: #81351f;
+    font-weight: bold;
+}
+
+.payment-course-lessons {
+    margin: .3em;
+}

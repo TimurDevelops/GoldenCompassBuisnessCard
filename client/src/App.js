@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import MainPage from "./pages/MainPage";
 import CoursePage from "./pages/CoursePage";
+import PaymentPage from "./pages/PaymentPage";
+
 // Icons
 import englishIcon from "./img/englishIcon.png";
 import speechTherapyIcon from "./img/speechTherapyIcon.png";
@@ -12,7 +14,7 @@ import preSchoolIcon from "./img/preSchoolIcon.png";
 import speedReadingIcon from "./img/speedReadingIcon.png";
 import chessIcon from "./img/chessIcon.png";
 
-// Icons
+// BGs
 import englishBg from "./img/englishBg.jpeg";
 import speechTherapyBg from "./img/lampBg.jpeg";
 import mentalArithmeticBg from "./img/abacusBg.jpeg";
@@ -26,7 +28,8 @@ import './App.css';
 function App() {
   const courses = [
     {
-      link: '/course/english',
+      id: "english",
+      link: "/course/english",
       title: "Английский язык",
       shortDescription: "Опытные педагоги найдут подход к вашему ребенку и помогут преодолеть языковой барьер.",
       description: "Онлайн-уроки английского для детей.\n" +
@@ -42,12 +45,15 @@ function App() {
       icon: englishIcon,
       plans: true,
       prices: [{
+        id: 1,
         lessons: 4,
         price: 4000,
       }, {
+        id: 2,
         lessons: 8,
         price: 7900,
       }, {
+        id: 3,
         lessons: 24,
         price: 19900,
       }],
@@ -64,6 +70,7 @@ function App() {
       backgroundColor: "#697889"
     },
     {
+      id: "speech-therapy",
       link: '/course/speech-therapy',
       title: "Логопедия",
       shortDescription: "Наши специалисты поставят, автоматизируют и скорректируют произношение звуков;",
@@ -74,12 +81,15 @@ function App() {
       icon: speechTherapyIcon,
       plans: true,
       prices: [{
+        id: 1,
         lessons: 8,
         price: 11200,
       }, {
+        id: 2,
         lessons: 16,
         price: 19200,
       }, {
+        id: 3,
         lessons: 30,
         price: 33000,
       }],
@@ -96,6 +106,7 @@ function App() {
       backgroundColor: "#3b615e"
     },
     {
+      id: "mental-arithmetic",
       link: '/course/mental-arithmetic',
       title: "Ментальная арифметика",
       shortDescription: "Наши специалисты помогут комплексному развитию ребенка.",
@@ -110,15 +121,19 @@ function App() {
       icon: mentalArithmeticIcon,
       plans: true,
       prices: [{
+        id: 1,
         lessons: 4,
         price: 4000,
-      },{
+      }, {
+        id: 2,
         lessons: 8,
         price: 7200,
       }, {
+        id: 3,
         lessons: 16,
         price: 12800,
       }, {
+        id: 4,
         lessons: 30,
         price: 22500,
       }],
@@ -135,6 +150,7 @@ function App() {
       backgroundColor: "#97afc0"
     },
     {
+      id: "culture",
       link: '/course/culture',
       title: "Мировая художественная культура",
       shortDescription: "Курс по мировой художественной культуры от первобытности до наших дней.",
@@ -160,6 +176,7 @@ function App() {
       backgroundColor: "#b7b7bc"
     },
     {
+      id: "pre-school",
       link: '/course/pre-school',
       title: "Подготовка к школе",
       shortDescription: "Наши специалисты помогут вашему ребенку обрести базовые знания по предметам.",
@@ -172,12 +189,15 @@ function App() {
       icon: preSchoolIcon,
       plans: true,
       prices: [{
+        id: 1,
         lessons: 8,
         price: 7900,
       }, {
+        id: 2,
         lessons: 16,
         price: 14900,
       }, {
+        id: 3,
         lessons: 24,
         price: 19900,
       }],
@@ -194,6 +214,7 @@ function App() {
       backgroundColor: "#d9d0a5"
     },
     {
+      id: "speed-reading",
       link: '/course/speed-reading',
       title: "Скорочтение",
       shortDescription: "Наш курс по скорочтению поможет вашему малышу полюбить книги и сделать этот процесс увлекательным и познавательным!",
@@ -224,6 +245,7 @@ function App() {
       backgroundColor: "#a09c8d"
     },
     {
+      id: "chess",
       link: '/course/chess',
       title: "Шахматы",
       shortDescription: "Обучение на игровой платформе, соревнования с детьми по всему миру.",
@@ -236,12 +258,15 @@ function App() {
       icon: chessIcon,
       plans: true,
       prices: [{
+        id: 1,
         lessons: 4,
         price: 4800,
       }, {
+        id: 2,
         lessons: 8,
         price: 7900,
       }, {
+        id: 3,
         lessons: 24,
         price: 14400,
       }],
@@ -266,6 +291,8 @@ function App() {
                path="*"/>
         <Route element={<CoursePage courses={courses}/>}
                path="/course/:courseId"/>
+        <Route element={<PaymentPage courses={courses}/>}
+               path="/payment/:courseId/:number"/>
       </Routes>
     </Router>
   );
