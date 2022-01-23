@@ -1,14 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Link} from "react-router-dom";
-import {CardElement, useElements, useStripe} from "@stripe/react-stripe-js";
 
 import Title from "../img/title.png";
 
 import "./PaymentSection.css";
 
 const PaymentSection = ({course, number}) => {
-  const elements = useElements();
-  const stripe = useStripe();
 
   let price;
   let lessons;
@@ -21,57 +18,36 @@ const PaymentSection = ({course, number}) => {
     lessons = null;
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!stripe || !elements) {
-      return;
-    }
-    const {error: backendError, clientSecret} = await fetch(
-      '/create-payment-intent',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          paymentMethodType: 'card',
-          currency: 'usd',
-        }),
-      }
-    ).then((r) => r.json());
+  useEffect(() => {
 
-    if (backendError) {
-      alert(backendError.message);
-      return;
-    }
+    const options = {
+      account: 32691195,
+      amount: 12.34,
+      transactionId: '1234567890-abcdef'
+    };
 
-    alert('Client secret returned');
-    const {error: stripeError, paymentIntent} = await stripe.confirmCardPayment(
-      clientSecret,
-      {
-        payment_method: {
-          card: elements.getElement(CardElement),
-          billing_details: {
-            // name: 'Jenny Rosen',
-          },
-        },
-      }
-    );
+    const assistant = new window.Assistant.Builder();
 
-    if (stripeError) {
-      // Show error to your customer (e.g., insufficient funds)
-      alert(stripeError.message);
-      return;
-    }
+    // платёж прошёл успешно
+    assistant.setOnSuccessCallback(function (operationId, transactionId) {
+      // todo: здесь можно сделать что угодно – например,
+      // перенаправить на другую страницу:
+      // location.replace("https://domain.domain");
+    });
 
-    // Show a success message to your customer
-    // There's a risk of the customer closing the window before callback
-    // execution. Set up a webhook or plugin to listen for the
-    // payment_intent.succeeded event that handles any business critical
-    // post-payment actions.
-    alert(`Payment ${paymentIntent.status}: ${paymentIntent.id}`);
+    // платёж не прошёл
+    assistant.setOnFailCallback(function (operationId, transactionId) {
+      // todo: действия на ваш вкус
+    });
 
-  }
+    // платёж обрабатывается
+    assistant.setOnInProgressCallback(function (operationId, transactionId) {
+      // todo: тоже можно что-нибудь придумать
+    });
+
+    assistant.build(options);
+  });
+
 
   return (
     <section>
@@ -87,12 +63,10 @@ const PaymentSection = ({course, number}) => {
 
         <div className={"payment-area"}>
           <div className={"payment-area-wrapper"}>
-            <form id={"payment-form"} onSubmit={handleSubmit}>
-              <label htmlFor={"card-element"}>Укажите даннные вашей карты:</label>
-              <CardElement id={"card-element"}/>
+            <label htmlFor={"card-element"}>Укажите даннные вашей карты:</label>
+            <div id="payment-form"/>
 
-              <button>Оплатить</button>
-            </form>
+            <button>Оплатить</button>
           </div>
         </div>
 
