@@ -29,26 +29,27 @@ function CoursePageSection({course}) {
                 return (
                   <div key={index} className={"price-card"}>
                     {i.lessons} занятий/{course.price}
-                    <Link to={`/payment/${course.id}/${i.id}`}>
+                    {/*<Link to={`/payment/${course.id}/${i.id}`}>*/}
+                    <a href={`../main#contact`}>
                       <div className={"buy-button"}>
                       <span className={"buy-button-text"}>
                         Заказать
                       </span>
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 )
               }) :
               <div className={"price-card"}>
                 Стоимость курса: {course.price}
                 {/*<Link to={`/payment/${course.id}/0`}>*/}
-                <Link to={`/main#contact`}>
+                <a href={`../main#contact`}>
                   <div className={"buy-button"}>
                   <span className={"buy-button-text"}>
                     Заказать
                   </span>
                   </div>
-                </Link>
+                </a>
               </div>
           }
         </div>
