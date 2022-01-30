@@ -41,7 +41,8 @@ function CoursePageSection({course}) {
               }) :
               <div className={"price-card"}>
                 Стоимость курса: {course.price}
-                <Link to={`/payment/${course.id}/0`}>
+                {/*<Link to={`/payment/${course.id}/0`}>*/}
+                <Link to={`/main#contact`}>
                   <div className={"buy-button"}>
                   <span className={"buy-button-text"}>
                     Заказать

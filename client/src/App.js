@@ -44,18 +44,31 @@ function App() {
         "\t - Опытные педагоги найдут подход к вашему ребенку и помогут преодолеть языковой барьер. ",
       icon: englishIcon,
       plans: true,
+      // prices: [{
+      //   id: 1,
+      //   lessons: 4,
+      //   price: 4000,
+      // }, {
+      //   id: 2,
+      //   lessons: 8,
+      //   price: 7900,
+      // }, {
+      //   id: 3,
+      //   lessons: 24,
+      //   price: 19900,
+      // }],
       prices: [{
         id: 1,
         lessons: 4,
-        price: 4000,
+        price: "",
       }, {
         id: 2,
         lessons: 8,
-        price: 7900,
+        price: "",
       }, {
         id: 3,
         lessons: 24,
-        price: 19900,
+        price: "",
       }],
       background: englishBg,
       blockPosition: {
@@ -231,7 +244,8 @@ function App() {
         "\t - Формирование навыка оперативно решать поставленную задачу",
       icon: speedReadingIcon,
       plans: false,
-      price: 7900,
+      // price: 7900,
+      price: "",
       background: speedReadingBg,
       blockPosition: {
         x: 50,
