@@ -21,8 +21,25 @@
     background: #0a3131;
     box-shadow: 0 0 10px 0 #565656;
 }
+.course-section-bg {
+    width: 35em;
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    padding: .5em;
+    background: #0a3131;
+    box-shadow: 0 0 10px 0 #565656;
+}
 
 .course-description {
+    /*background: #edb941;*/
+    padding: 1em 2em;
+    white-space: pre-wrap;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.course-warning {
     /*background: #edb941;*/
     padding: 1em 2em;
     white-space: pre-wrap;

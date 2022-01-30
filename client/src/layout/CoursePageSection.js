@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./CoursePageSection.css";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 function CoursePageSection({course}) {
   return (
@@ -19,8 +19,11 @@ function CoursePageSection({course}) {
             {course.title}
           </div>
           {course.description}
+          {course.warning && <div className={"course-warning"}>{course.warning}</div>}
         </div>
+
       </div>
+
       <div className={"price-section-bg"} style={{left: `${course.pricePosition.x}%`}}>
         <div className={"price-section"}>
           {
@@ -28,7 +31,7 @@ function CoursePageSection({course}) {
               course.prices.map((i, index) => {
                 return (
                   <div key={index} className={"price-card"}>
-                    {i.lessons} занятий/{course.price}
+                    {i.lessons} занятий/{i.price}
                     {/*<Link to={`/payment/${course.id}/${i.id}`}>*/}
                     <a href={`../main#contact`}>
                       <div className={"buy-button"}>

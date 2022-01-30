@@ -242,17 +242,35 @@ function App() {
         "\t - Повышение интереса к учебной деятельности;\n" +
         "\t - Развитие концентрации и внимания;\n" +
         "\t - Формирование навыка оперативно решать поставленную задачу",
+      warning: "Продолжительность одного занятия: 45 минут\n",
       icon: speedReadingIcon,
-      plans: false,
+      plans: true,
       // price: 7900,
-      price: "",
+      // price: "",
+      prices: [{
+        id: 1,
+        lessons: 5,
+        price: 3850,
+      }, {
+        id: 2,
+        lessons: 10,
+        price: 7200,
+      }, {
+        id: 3,
+        lessons: 15,
+        price: 9600,
+      }, {
+        id: 3,
+        lessons: 20,
+        price: 11400,
+      }],
       background: speedReadingBg,
       blockPosition: {
         x: 50,
-        y: 20,
+        y: 12,
       },
       pricePosition: {
-        x: 50,
+        x: 40,
       },
       blockBackground: "#99b3c2",
       backgroundPosition: "left bottom",
