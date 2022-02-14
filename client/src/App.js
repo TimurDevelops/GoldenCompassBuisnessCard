@@ -292,7 +292,7 @@ function App() {
       prices: [{
         id: 1,
         lessons: 4,
-        price: 4800,
+        price: 4000,
       }, {
         id: 2,
         lessons: 8,
