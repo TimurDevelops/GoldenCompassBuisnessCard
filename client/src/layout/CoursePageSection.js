@@ -4,6 +4,7 @@ import "./CoursePageSection.css";
 // import {Link} from "react-router-dom";
 
 function CoursePageSection({course}) {
+  console.log(course)
   return (
     <section className={'course-page-section'} id={"course-page-section"} style={{
       backgroundImage: `url(${course.background})`,
@@ -31,7 +32,7 @@ function CoursePageSection({course}) {
               course.prices.map((i, index) => {
                 return (
                   <div key={index} className={"price-card"}>
-                    {i.lessons} занятий/{i.price}
+                    {course.ruPrice ? <span>{i.lessons} занятий / ₽{i.price}</span> : <span>{i.lessons} занятий / ${i.priceUs} - €{i.priceEu}</span>}
                     {/*<Link to={`/payment/${course.id}/${i.id}`}>*/}
                     <a href={`../main#contact`}>
                       <div className={"buy-button"}>
@@ -44,7 +45,7 @@ function CoursePageSection({course}) {
                 )
               }) :
               <div className={"price-card"}>
-                Стоимость курса: {course.price}
+                Стоимость курса: ${course.priceUs} - €{course.priceEu}
                 {/*<Link to={`/payment/${course.id}/0`}>*/}
                 <a href={`../main#contact`}>
                   <div className={"buy-button"}>

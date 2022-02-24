@@ -7,7 +7,7 @@ import PaymentPage from "./pages/PaymentPage";
 
 // Icons
 import englishIcon from "./img/englishIcon.png";
-import speechTherapyIcon from "./img/speechTherapyIcon.png";
+// import speechTherapyIcon from "./img/speechTherapyIcon.png";
 import mentalArithmeticIcon from "./img/mentalArithmeticIcon.png";
 import cultureIcon from "./img/cultureIcon.png";
 import preSchoolIcon from "./img/preSchoolIcon.png";
@@ -16,7 +16,7 @@ import chessIcon from "./img/chessIcon.png";
 
 // BGs
 import englishBg from "./img/englishBg.jpeg";
-import speechTherapyBg from "./img/lampBg.jpeg";
+// import speechTherapyBg from "./img/lampBg.jpeg";
 import mentalArithmeticBg from "./img/abacusBg.jpeg";
 import cultureBg from "./img/cultureBg.jpeg";
 import preSchoolBg from "./img/handsBg.jpeg";
@@ -44,31 +44,25 @@ function App() {
         "\t - Опытные педагоги найдут подход к вашему ребенку и помогут преодолеть языковой барьер. ",
       icon: englishIcon,
       plans: true,
-      // prices: [{
-      //   id: 1,
-      //   lessons: 4,
-      //   price: 4000,
-      // }, {
-      //   id: 2,
-      //   lessons: 8,
-      //   price: 7900,
-      // }, {
-      //   id: 3,
-      //   lessons: 24,
-      //   price: 19900,
-      // }],
+      ruPrice: false,
       prices: [{
         id: 1,
         lessons: 4,
         price: "",
+        priceUs: 54,
+        priceEu: 48,
       }, {
         id: 2,
         lessons: 8,
         price: "",
+        priceUs: 105,
+        priceEu: 95,
       }, {
         id: 3,
         lessons: 24,
         price: "",
+        priceUs: 125,
+        priceEu: 110,
       }],
       background: englishBg,
       blockPosition: {
@@ -82,42 +76,42 @@ function App() {
       backgroundPosition: "left bottom",
       backgroundColor: "#697889"
     },
-    {
-      id: "speech-therapy",
-      link: '/course/speech-therapy',
-      title: "Логопедия",
-      shortDescription: "Наши специалисты поставят, автоматизируют и скорректируют произношение звуков;",
-      description: "Образовательный курс разработан для детей с 4 лет.\n" +
-        "Мы используем интегративный подход в логопедии.\n" +
-        "Интегративная логопедия - это объединение большого пласта наук, где главное место занимают науки о головном мозге, его работе, а также мозговой организации речи. Это нейропсихология, нейрологопедия, нейролингвистика, нейрофизиология.\n\n" +
-        "Научим ребенка понятно и правильно разговаривать. Наши специалисты поставят автоматизируют и скорректируют произношение звуков.\n\n",
-      icon: speechTherapyIcon,
-      plans: true,
-      prices: [{
-        id: 1,
-        lessons: 8,
-        price: 11200,
-      }, {
-        id: 2,
-        lessons: 16,
-        price: 19200,
-      }, {
-        id: 3,
-        lessons: 30,
-        price: 33000,
-      }],
-      background: speechTherapyBg,
-      blockPosition: {
-        x: 55,
-        y: 20,
-      },
-      pricePosition: {
-        x: 50,
-      },
-      blockBackground: "#ecba4b",
-      backgroundPosition: "left bottom",
-      backgroundColor: "#3b615e"
-    },
+    // {
+    //   id: "speech-therapy",
+    //   link: '/course/speech-therapy',
+    //   title: "Логопедия",
+    //   shortDescription: "Наши специалисты поставят, автоматизируют и скорректируют произношение звуков;",
+    //   description: "Образовательный курс разработан для детей с 4 лет.\n" +
+    //     "Мы используем интегративный подход в логопедии.\n" +
+    //     "Интегративная логопедия - это объединение большого пласта наук, где главное место занимают науки о головном мозге, его работе, а также мозговой организации речи. Это нейропсихология, нейрологопедия, нейролингвистика, нейрофизиология.\n\n" +
+    //     "Научим ребенка понятно и правильно разговаривать. Наши специалисты поставят автоматизируют и скорректируют произношение звуков.\n\n",
+    //   icon: speechTherapyIcon,
+    //   plans: true,
+    //   prices: [{
+    //     id: 1,
+    //     lessons: 8,
+    //     price: 11200,
+    //   }, {
+    //     id: 2,
+    //     lessons: 16,
+    //     price: 19200,
+    //   }, {
+    //     id: 3,
+    //     lessons: 30,
+    //     price: 33000,
+    //   }],
+    //   background: speechTherapyBg,
+    //   blockPosition: {
+    //     x: 55,
+    //     y: 20,
+    //   },
+    //   pricePosition: {
+    //     x: 50,
+    //   },
+    //   blockBackground: "#ecba4b",
+    //   backgroundPosition: "left bottom",
+    //   backgroundColor: "#3b615e"
+    // },
     {
       id: "mental-arithmetic",
       link: '/course/mental-arithmetic',
@@ -133,22 +127,31 @@ function App() {
         "\tМотивации к обучению.",
       icon: mentalArithmeticIcon,
       plans: true,
+      ruPrice: false,
       prices: [{
         id: 1,
         lessons: 4,
         price: 4000,
+        priceUs: 54,
+        priceEu: 46,
       }, {
         id: 2,
         lessons: 8,
         price: 7200,
+        priceUs: 100,
+        priceEu: 85,
       }, {
         id: 3,
         lessons: 16,
         price: 12800,
+        priceUs: 170,
+        priceEu: 150,
       }, {
         id: 4,
         lessons: 30,
         price: 22500,
+        priceUs: 297,
+        priceEu: 270,
       }],
       background: mentalArithmeticBg,
       blockPosition: {
@@ -175,7 +178,10 @@ function App() {
         "\t - Навык отмечать детали формирование культурной насмотренности у ребенка.",
       icon: cultureIcon,
       plans: false,
+      ruPrice: false,
       price: 6000,
+      priceUs: 80,
+      priceEu: 70,
       background: cultureBg,
       blockPosition: {
         x: 55,
@@ -201,6 +207,7 @@ function App() {
         "\t - Подготовка к школе без стресса и с интересом ",
       icon: preSchoolIcon,
       plans: true,
+      ruPrice: true,
       prices: [{
         id: 1,
         lessons: 8,
@@ -247,22 +254,31 @@ function App() {
       plans: true,
       // price: 7900,
       // price: "",
+      ruPrice: false,
       prices: [{
         id: 1,
         lessons: 5,
         price: 3850,
+        priceUs: 51,
+        priceEu: 44,
       }, {
         id: 2,
         lessons: 10,
         price: 7200,
+        priceUs: 95,
+        priceEu: 85,
       }, {
         id: 3,
         lessons: 15,
         price: 9600,
+        priceUs: 126,
+        priceEu: 110,
       }, {
         id: 3,
         lessons: 20,
         price: 11400,
+        priceUs: 150,
+        priceEu: 130,
       }],
       background: speedReadingBg,
       blockPosition: {
@@ -289,18 +305,25 @@ function App() {
         "\t - Персонально бонусы за победы соревнования с детьми по всему миру",
       icon: chessIcon,
       plans: true,
+      ruPrice: false,
       prices: [{
         id: 1,
         lessons: 4,
         price: 4000,
+        priceUs: 54,
+        priceEu: 46,
       }, {
         id: 2,
         lessons: 8,
         price: 7900,
+        priceUs: 105,
+        priceEu: 95,
       }, {
         id: 3,
         lessons: 24,
         price: 14400,
+        priceUs: 190,
+        priceEu: 165,
       }],
       background: chessBg,
       blockPosition: {
