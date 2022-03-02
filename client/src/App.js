@@ -59,7 +59,7 @@ function App() {
         priceEu: 95,
       }, {
         id: 3,
-        lessons: 24,
+        lessons: 10,
         price: "",
         priceUs: 125,
         priceEu: 110,
