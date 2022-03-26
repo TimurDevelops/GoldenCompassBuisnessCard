@@ -65,6 +65,10 @@
     padding: 2em;
 }
 
+.price-section-bg.hidden{
+    display: none;
+}
+
 .price-section {
     display: flex;
 }

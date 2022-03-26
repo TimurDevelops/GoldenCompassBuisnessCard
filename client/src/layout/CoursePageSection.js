@@ -4,7 +4,6 @@ import "./CoursePageSection.css";
 // import {Link} from "react-router-dom";
 
 function CoursePageSection({course}) {
-  console.log(course)
   return (
     <section className={'course-page-section'} id={"course-page-section"} style={{
       backgroundImage: `url(${course.background})`,
@@ -25,7 +24,7 @@ function CoursePageSection({course}) {
 
       </div>
 
-      <div className={"price-section-bg"} style={{left: `${course.pricePosition.x}%`}}>
+      <div className={`price-section-bg ${course.hidePrice ? "hidden" : ""}`} style={{left: `${course.pricePosition.x}%`}}>
         <div className={"price-section"}>
           {
             course.plans ?
