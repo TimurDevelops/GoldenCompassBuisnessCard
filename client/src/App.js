@@ -7,7 +7,7 @@ import PaymentPage from "./pages/PaymentPage";
 
 // Icons
 import englishIcon from "./img/englishIcon.png";
-import turkishLanguageIcon from "./img/speechTherapyIcon.png";
+import turkishLanguageIcon from "./img/turkish.png";
 import mentalArithmeticIcon from "./img/mentalArithmeticIcon.png";
 import cultureIcon from "./img/cultureIcon.png";
 import preSchoolIcon from "./img/preSchoolIcon.png";
@@ -16,7 +16,7 @@ import chessIcon from "./img/chessIcon.png";
 
 // BGs
 import englishBg from "./img/englishBg.jpeg";
-import turkishLanguageBg from "./img/lampBg.jpeg";
+import turkishLanguageBg from "./img/turkishBg.jpeg";
 import mentalArithmeticBg from "./img/abacusBg.jpeg";
 import cultureBg from "./img/cultureBg.jpeg";
 import preSchoolBg from "./img/handsBg.jpeg";
@@ -65,7 +65,7 @@ function App() {
         x: 50,
       },
       blockBackground: "#ecba4b",
-      backgroundPosition: "left bottom",
+      backgroundPosition: "left center",
       backgroundColor: "#3b615e"
     },
     {
