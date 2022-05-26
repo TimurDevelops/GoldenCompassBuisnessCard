@@ -25,13 +25,13 @@ function CoursePageSection({course}) {
       </div>
 
       <div className={`price-section-bg ${course.hidePrice ? "hidden" : ""}`} style={{left: `${course.pricePosition.x}%`}}>
-        <div className={"price-section"}>
+        <div className={`price-section ${course.plans ? "" : "price-number"}`}>
           {
             course.plans ?
               course.prices.map((i, index) => {
                 return (
                   <div key={index} className={"price-card"}>
-                    {course.ruPrice ? <span>{i.lessons} занятий / ₽{i.price}</span> : <span>{i.lessons} занятий / ${i.priceUs} - €{i.priceEu}</span>}
+                    {course.ruPrice ? <span>{i.lessons} занятий<span className={"price-number"}> / ₽{i.price}</span></span> : <span>{i.lessons} занятий<span className={"price-number"}> / ${i.priceUs} - €{i.priceEu}</span></span>}
                     {/*<Link to={`/payment/${course.id}/${i.id}`}>*/}
                     <a href={`../main#contact`}>
                       <div className={"buy-button"}>

@@ -62,7 +62,7 @@
     left: 20%;
     background: #d2c8c8;
     box-shadow: 0 0 10px 0 #565656;
-    padding: 2em;
+    /*padding: 2em;*/
 }
 
 .price-section-bg.hidden{
@@ -71,6 +71,7 @@
 
 .price-section {
     display: flex;
+    margin: 2em;
 }
 
 .price-card {
@@ -88,6 +89,10 @@
     align-items: center;
     font-family: 'Oswald', sans-serif;
     text-align: center;
+}
+
+.price-number{
+    display: none;
 }
 
 .price-card a {
