@@ -3,12 +3,22 @@ const cors = require('cors');
 const fs = require("fs");
 const nodemailer = require('nodemailer');
 
-const {env} = require('./config.json');
-const {EMAIL_USER,
+let config;
+
+try {
+  config = require('./config.json');
+} catch (ex) {
+  config = process.env
+}
+const {
+  env,
+  EMAIL_USER,
   EMAIL_PASS,
   OAUTH_CLIENT_ID,
   OAUTH_CLIENT_SECRET,
-  OAUTH_REFRESH_TOKEN} = require('./config.json');
+  OAUTH_REFRESH_TOKEN
+} = config
+
 const https = require("https");
 const http = require("http");
 const credentials = {};
@@ -27,7 +37,7 @@ const transporter = nodemailer.createTransport({
 
 transporter.verify().then(console.log).catch(console.error);
 
-if (env === 'prod'){
+if (env === 'prod') {
   const privateKey = fs.readFileSync('./sslcert/gc-school.key', 'utf8');
   const certificate = fs.readFileSync('./sslcert/gc-school_com_chain.crt', 'utf8');
   credentials.key = privateKey;
@@ -57,7 +67,7 @@ app.post('/send-email', (req, res) => {
     text: body
   };
 
-  transporter.sendMail(mailOptions, function(error, info){
+  transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);
     } else {
